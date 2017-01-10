@@ -12,7 +12,7 @@ body
     width: 0;
     position: fixed;
     z-index: 1;
-    top: 160px;
+    top: 0;
     left: 0;
     background-color: grey;
     overflow-x: hidden;
@@ -45,15 +45,16 @@ body
     transition: margin-left .5s;
     padding: 16px;
     font-size: 32px;
-    margin-top: 10px;
+    margin-top: 50px;
     margin-left: 95px; 
     text-align: center
 }
  #Menu {
-        transition:all 0.5s;
+        transition:all 0.1s;
         padding: 16px;
         font-size: 20px;    
-        text-align: left
+        text-align: left;
+        margin-top: -200px;
     }
     
 @media screen and (max-height: 450px) {
@@ -62,10 +63,15 @@ body
 }
 </style>
 <body>
-
+<div id="main">
+  <h2>Anime That Nick Should Watch</h2>
+</div>
+<div id="Menu">
+   <h2> <span style=cursor:pointer; onclick="openNav()"; >&#9783; Genre</span></h2>
+</div>
 <div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&#9783;
-      <span   font-size: 20px; >Genre</span></a>
+      <span   font-size: 20px;margin-top: -200px;> Genre</span></a>
   <a href="#">Slice of Life</a>
   <a href="#">Action</a>
   <a href="#">Romance</a>
@@ -73,12 +79,7 @@ body
   <a href="#">Comedy</a>
 </div>
 
-<div id="main">
-  <h2>Anime That Nick Should Watch</h2>
-</div>
-<div id="Menu">
-   <h2> <span style=cursor:pointer; onclick="openNav()">&#9783; Genre</span></h2>
-</div>
+
 <script>
 function openNav() {
     document.getElementById("mySidenav").style.width = "250px";
