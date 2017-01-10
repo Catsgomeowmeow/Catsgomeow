@@ -44,9 +44,15 @@ body {
     padding: 16px;
     font-size: 32px;
     margin-top: 10px;
-    margin-left: 1002px; 
+    margin-left: 95px; 
+/*    position: fixed*/
 }
-
+ #Menu {
+        transition: margin-left .5s;
+        padding: 16px;
+        font-size: 20px;
+        cursor: crosshair;
+    }
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 32px;}
@@ -66,9 +72,9 @@ body {
 <div id="main">
   <h2>Anime That Nick Should Watch</h2>
 </div>
-<div>
-    <span style="font-size:20px;cursor:pointer" onclick="openNav()">&#9776; Genre</span>
- </div>
+<div id="Menu">
+   <h2> <span onclick="openNav()">&#9776; Genre</span></h2>
+</div>
 <script>
 function openNav() {
     document.getElementById("mySidenav").style.width = "250px";
@@ -78,6 +84,7 @@ function openNav() {
 function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
     document.getElementById("main").style.marginLeft= "0";
+    document.getElementById("Menu").style.marginLeft="0";
 }
 </script>
      
