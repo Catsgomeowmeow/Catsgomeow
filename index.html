@@ -1,28 +1,85 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <style>
-        body {
-    background-color: lightgreen;
+<style>
+body {
+    font-family: "verdana", sans-serif;
 }
 
-h1 {
-    color: white;
-    text-align: center;
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
 }
 
-p {
-    font-family: verdana;
-    font-size: 20px;
-}</style>
-<!--    This is the Tab name-->
-<title>Anime To Watch For Nick</title>
-</head>
-    <body>
-    <h1>Anime That Nick Should Watch</h1>
-        <p>Slice of Life:</p> 
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/haGyhdjA7aQ" frameborder="0" allowfullscreen></iframe>
-    </body>
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s
+}
 
-</html>
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
 
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 32px;
+    margin-left: 50px;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+    font-size: 32px;
+    margin-top: 10px;
+    margin-left: 1002px; 
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 32px;}
+}
+</style>
+<body>
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#">Slice of Life</a>
+  <a href="#">Action</a>
+  <a href="#">Romance</a>
+  <a href="#">Thriller</a>
+  <a href="#">Comedy</a>
+</div>
+
+<div id="main">
+  <h2>Anime That Nick Should Watch</h2>
+</div>
+<div>
+    <span style="font-size:20px;cursor:pointer" onclick="openNav()">&#9776; Genre</span>
+ </div>
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+     
+</body>
+</html> 
