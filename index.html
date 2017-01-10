@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html>
 <style>
-body {
+body 
+    {background-color: ghostwhite}
+    {
     font-family: "verdana", sans-serif;
 }
 
@@ -10,9 +12,9 @@ body {
     width: 0;
     position: fixed;
     z-index: 1;
-    top: 0;
+    top: 160px;
     left: 0;
-    background-color: white;
+    background-color: grey;
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
@@ -39,19 +41,21 @@ body {
 }
 
 #main {
+    position: fixed
     transition: margin-left .5s;
     padding: 16px;
     font-size: 32px;
     margin-top: 10px;
     margin-left: 95px; 
-/*    position: fixed*/
+    text-align: center
 }
  #Menu {
-        transition: margin-left .5s;
+        transition:all 0.5s;
         padding: 16px;
-        font-size: 20px;
-        
+        font-size: 20px;    
+        text-align: left
     }
+    
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 32px;}
@@ -60,7 +64,8 @@ body {
 <body>
 
 <div id="mySidenav" class="sidenav">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&#9783;
+      <span   font-size: 20px; >Genre</span></a>
   <a href="#">Slice of Life</a>
   <a href="#">Action</a>
   <a href="#">Romance</a>
@@ -72,18 +77,19 @@ body {
   <h2>Anime That Nick Should Watch</h2>
 </div>
 <div id="Menu">
-   <h2> <span style=cursor:pointer; onclick="openNav()">&#9776; Genre</span></h2>
+   <h2> <span style=cursor:pointer; onclick="openNav()">&#9783; Genre</span></h2>
 </div>
 <script>
 function openNav() {
     document.getElementById("mySidenav").style.width = "250px";
     document.getElementById("main").style.marginLeft = "250px";
+    document.getElementById("Menu").style.opacity = 0  ;
 }
 
 function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
     document.getElementById("main").style.marginLeft= "0";
-    document.getElementById("Menu").style.marginLeft="0";
+    document.getElementById("Menu").style.opacity=1;
 }
 </script>
      
