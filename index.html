@@ -54,7 +54,10 @@ body
         padding: 16px;
         font-size: 20px;    
         text-align: left;
-        margin-top: -200px;
+        margin-top: -500px;
+    }
+    #video {position:relative;
+        margin-left: 250px;
     }
     
 @media screen and (max-height: 450px) {
@@ -64,14 +67,24 @@ body
 </style>
 <body>
 <div id="main">
-  <h2>Anime That Nick Should Watch</h2>
+  <h2>Anime That Nick Should Watch</h2>   
 </div>
+<div id= "video" class = "container">
+    <iframe width="360" height="215" src="https://www.youtube.com/embed/3ngiZjmnPgc" frameborder="0" allowfullscreen></iframe>;
+    <div class = "overlay">
+    <p><b>Steins;Gate</b> </p>
+        <form>
+        <p>A show about time and paradoxes</p>
+        </form>
+    </div>
+ </div>
 <div id="Menu">
    <h2> <span style=cursor:pointer; onclick="openNav()"; >&#9783; Genre</span></h2>
 </div>
+
 <div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&#9783;
-      <span   font-size: 20px;margin-top: -200px;> Genre</span></a>
+      <span   font-size: 20px;margin-top: 200px;> Genre</span></a>
   <a href="#">Slice of Life</a>
   <a href="#">Action</a>
   <a href="#">Romance</a>
