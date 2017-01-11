@@ -1,111 +1,48 @@
 <!DOCTYPE html>
 <html>
-<style>
-body 
-    {background-color: ghostwhite}
-    {
-    font-family: "verdana", sans-serif;
-}
-
-.sidenav {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: grey;
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 60px;
-}
-
-.sidenav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: black;
-    display: block;
-    transition: 0.3s
-}
-
-
-}
-
-.sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 32px;
-    margin-left: 50px;
-}
-
-#main {
-    position: fixed
-    transition: margin-left .5s;
-    padding: 16px;
-    font-size: 32px;
-    margin-top: 50px;
-    margin-left: 95px; 
-    text-align: center
-}
- #Menu {
-        transition:all 0.1s;
-        padding: 16px;
-        font-size: 20px;    
-        text-align: left;
-        margin-top: -500px;
-    }
-    #video {position:relative;
-        margin-left: 250px;
-    }
-    
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 32px;}
-}
-</style>
-<body>
-<div id="main">
-  <h2>Anime That Nick Should Watch</h2>   
-</div>
-<div id= "video" class = "container">
-    <iframe width="360" height="215" src="https://www.youtube.com/embed/3ngiZjmnPgc" frameborder="0" allowfullscreen></iframe>;
-    <div class = "overlay">
-    <p><b>Steins;Gate</b> </p>
-        <form>
-        <p>A show about time and paradoxes</p>
-        </form>
+<head>
+    <title>SideBar Menu</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+    <body>
+        <div id="sidebar">
+              <div id="sidebar-btn">
+            <span >🍔</span>
+            
     </div>
- </div>
-<div id="Menu">
-   <h2> <span style=cursor:pointer; onclick="openNav()"; >&#9783; Genre</span></h2>
-</div>
+        
+            <ul>
+                <li><a href="#">Link 1</a></li>
+                <li><a href="#">Link 2</a></li>
+                <li><a href="#">Link 3</a></li>
+                <li><a href="#">Link 4</a></li>
+            </ul>
+              
+        </div>
+        
 
-<div id="mySidenav" class="sidenav">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&#9783;
-      <span   font-size: 20px;margin-top: 200px;> Genre</span></a>
-  <a href="#">Slice of Life</a>
-  <a href="#">Action</a>
-  <a href="#">Romance</a>
-  <a href="#">Thriller</a>
-  <a href="#">Comedy</a>
-</div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script>
+        $(document).ready(function(){
+            $('#sidebar-btn').click(function(){
+                $('#sidebar').toggleClass("visible");
+            });
+        });
+            
+        </script>
+    
+    
+    
+    
+    
+    
+    
+    
+    </body>
 
 
-<script>
-function openNav() {
-    document.getElementById("mySidenav").style.width = "250px";
-    document.getElementById("main").style.marginLeft = "250px";
-    document.getElementById("Menu").style.opacity = 0  ;
-}
 
-function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
-    document.getElementById("main").style.marginLeft= "0";
-    document.getElementById("Menu").style.opacity=1;
-}
-</script>
-     
-</body>
-</html> 
+
+
+
+</html>
