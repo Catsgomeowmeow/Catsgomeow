@@ -63,27 +63,57 @@ h1 {
     font-family: "Helvetica", Helvetica, Arial;
     display: block;
     text-align: center;
+    text-decoration: underline;
+    font-weight: 600;
    
 }
  #Anime {
         margin-left: 150px;
         margin-top: 150px;
         text-align: left;
-        position: relative;
-        width: 300px;
-        text-align: center;
+        width:1000px ;
+        margin-right: 150px;
+        overflow: hidden
+
         
     
         
 }
-#name{
+#sg{
     font-size: 30px;
     color: black;
     width: 300px;
-    position: fixed;
+    position: absolute;
     background-color: rgba(210,210,210,  0.4);
     margin-top: 415px;
-}
-
+    float: left;
+    text-align: center;
+    cursor: pointer;
     
+}
+#ab{
+    font-size: 30px;
+    color: black;
+    width: 300px;
+    position: absolute;
+    background-color: rgba(210,210,210,  0.4);
+    margin-top: 415px;
+    float: left;
+    text-align: center;
+    margin-left: 330px;
+    cursor: pointer;
+}
+#pic{
+    width: 30px;
+    position: relative;
+    }
+p{
+    text-align: center;
+}
+h{
+    color: white;
+    
+    margin-top:;
+    margin-left: 6px;
+    font-size: 12px;
 }
