@@ -1,35 +1,42 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel=”stylesheet” id=”font-awesome-css” href=”//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css” type=”text/css” media=”screen”>
 
     <title>Nicks Anime List</title>
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
     <body>
-        
+    <a href="#" class="back-to-top" >🡹</a>
        <div id="Title">Anime Nick Should Watch</div>
-    <p>Hover over an image to see what its about </p>
+        <p>Hover over an image to see what its about </p>
     <div id= "Anime" >
-         <div id="sg">Steins;Gate</div>
-        <div class = "Picture" ;float:left; width:300px; margin-left:30px;>
-        <a href="https://www.youtube.com/watch?v=3ngiZjmnPgc" target="_blank" ...>
-                <img id="pic" style= width:300px;height:450px; src="https://myanimelist.cdn-dena.com/images/anime/5/73199l.jpg" alt = "Steins;Gate">
+         <div class=topright>Steins;Gate</div>
+            <div class = "video" ;float:left; width:300px; margin-left:30px;>
+                <a href="https://www.youtube.com/watch?v=3ngiZjmnPgc" target="_blank" ...>
+                <img id="pic" style= width:300px;height:450px; src="http://www.worktop-express.co.uk/media/gbu0/prodlg/black-gloss-work-surfaces.jpg" alt = "Steins;Gate">
         
                 </a>  
 
             </div>
 
-         <div id="ab">Angel Beats</div>
-        <div class = "Picture" style= width:300px;float:left;margin-left:30px;>
+        <div class= "topleft">Angel Beats</div>
+            <div class = "Picture" style= width:300px;float:left;margin-left:30px;>
                 <a style = width:300px; href="https://www.youtube.com/watch?v=-GQbdJb4rvE&t=4s" target="_blank" ... >
-                <img id="pic"; title = "A show about a guy who dies and ends up in limbo." style=width:300px; height="450px"; src="https://myanimelist.cdn-dena.com/images/anime/10/22061l.jpg" alt = "Steins;Gate">
+                <img id="pic"; title = "A show about a guy who dies and ends up in limbo." style=width:300px; height="450px"; src="http://www.worktop-express.co.uk/media/gbu0/prodlg/black-gloss-work-surfaces.jpg" alt = "Steins;Gate">
         
                 </a>  
 
             </div>
-            
-        </div>
+        <div class="3">Barakamon</div>
+            <div class = "video" ;float:left; width:300px; margin-left:30px;>
+            <a href="https://www.youtube.com/watch?v=3ngiZjmnPgc" target="_blank" ...>
+                <img id="pic" style= width:300px;height:450px; src="http://www.worktop-express.co.uk/media/gbu0/prodlg/black-gloss-work-surfaces.jpg" alt = "Steins;Gate">
+        
+                </a>  
+
+            </div>
+</div>
+       
         
         
         <div id="sidebar">
@@ -48,10 +55,6 @@
     </div>
             <h>V. 1.0</h>
         </div>
-
-<a class=”top” style=”display: inline;” href=”#”>Back to Top</a>
-
-
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script>
         $(document).ready(function(){
@@ -63,40 +66,22 @@
 </script>
 <script>
 
+//Says after how much scrolling the arrow should show up
+var amountScrolled = 300;
 
-$(document).ready(function() {
- 
-var offset = 250;
- 
-var duration = 300;
 $(window).scroll(function() {
- 
-if (jQuery(this).scrollTop() > offset) {
- 
-$(‘.top’).fadeIn(duration);
- 
-} else {
- 
-$(‘.top’).fadeOut(duration);
- 
-}
- 
+	if ( $(window).scrollTop() > amountScrolled ) {
+		$('a.back-to-top').fadeIn('slow');
+	} else {
+		$('a.back-to-top').fadeOut('slow');
+	}
 });
- 
- 
- 
-$(‘.top’).click(function(event) {
- 
-event.preventDefault();
- 
-$(‘html, body’).animate({scrollTop: 0}, duration);
- 
-return false;
- 
-})
- 
+ $('a.back-to-top').click(function() {
+	$('html, body').animate({
+		scrollTop: 0
+	}, 700);
+	return false;
 });
- 
 </script>
          
 
