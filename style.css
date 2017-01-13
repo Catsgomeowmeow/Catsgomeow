@@ -82,12 +82,7 @@ h1 {
         background-color: white;
         align-content: center;
         height: 10000px;
-     
-
-        
-    
-        
-}
+ }
 .topright{
     font-size: 30px;
     color: black;
@@ -114,7 +109,7 @@ h1 {
     margin-top: 465px;
     cursor: pointer;
 }
-.3{
+.sr{
     font-size: 30px;
     color: black;
     width: 300px;
@@ -124,7 +119,7 @@ h1 {
     float: left;
     text-align: center;
     margin-left: 50px;
-    margin-top: 100px;
+    margin-top: 1015px;
     cursor: pointer;
 }
 #pic{
@@ -150,22 +145,7 @@ h{
 }
 
 
-/*
-.top{
-    
-    margin:0;
-    position: fixed;
-    bottom: 0;
-    right:0;
-    width: 70px;
-    height: 70px;
-    z-index: 100;
-    display: none;
-    text-decoration: none;
-    color: white;
-    background-color: black;
-}
-*/
+
 a.back-to-top {
 	display: none;
 	width: 60px;
